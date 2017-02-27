@@ -26,7 +26,7 @@ public class NotesList extends AppCompatActivity {
     }
 
     public void openAddNote(View view) {
-        Intent intent = new Intent(this,AddPhoto.class);
+        Intent intent = new Intent(this, AddPhoto.class);
         startActivity(intent);
     }
 }
