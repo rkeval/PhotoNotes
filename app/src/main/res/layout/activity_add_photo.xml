@@ -17,33 +17,35 @@
 
         <RelativeLayout
             android:layout_width="match_parent"
-            android:layout_height="match_parent"
+            android:layout_height="wrap_content"
             android:id="@+id/rlContainer">
 
             <EditText
                 android:id="@+id/txtCaption"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:hint="Enter the caption" />
+                android:hint="@string/enter_the_caption" />
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="255dp"
                 android:layout_below="@+id/txtCaption"
                 android:src="@mipmap/ic_launcher"
-                android:id="@+id/ivPhoto"/>
+                android:id="@+id/ivPhoto"
+                android:contentDescription="Captured image" />
 
             <Button
                 android:id="@+id/btnTakePhoto"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/ivPhoto"
-                android:text="Take Photo" />
+                android:text="@string/take_photo"
+                android:onClick="takePhoto"/>
 
             <Button
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_below="@id/btnTakePhoto"
-                android:text="Save Note"
+                android:text="@string/save_note"
                 android:onClick="saveNote"/>
         </RelativeLayout>
     </ScrollView>

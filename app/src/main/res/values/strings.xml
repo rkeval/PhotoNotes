@@ -1,4 +1,7 @@
 <resources>
     <string name="app_name">Photo Notes</string>
     <string name="title_activity_temp">Temp</string>
+    <string name="enter_the_caption">Enter the caption</string>
+    <string name="save_note">Save Note</string>
+    <string name="take_photo">Take Photo</string>
 </resources>
