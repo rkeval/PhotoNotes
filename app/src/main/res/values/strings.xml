@@ -4,4 +4,6 @@
     <string name="enter_the_caption">Enter the caption</string>
     <string name="save_note">Save Note</string>
     <string name="take_photo">Take Photo</string>
+    <string name="table_name">PhotoNote</string>
+    <string name="DATABASE_NAME">Notes.db</string>
 </resources>
