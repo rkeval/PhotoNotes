@@ -4,6 +4,7 @@ import android.content.ContentResolver;
 import android.content.Intent;
 import android.content.res.Configuration;
 import android.csulb.edu.photonotes.support.CameraOperations;
+import android.csulb.edu.photonotes.support.SQLOperations;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.net.Uri;
@@ -16,6 +17,7 @@ import android.view.Menu;
 import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.Toast;
 
@@ -96,6 +98,9 @@ public class AddPhoto extends AppCompatActivity {
 
     //Save Note button pressed
     public void saveNote(View view) {
+        SQLOperations myDb= new SQLOperations(this);
+        EditText caption =(EditText)findViewById(R.id.txtCaption);
+        myDb.saveNote(caption.getText().toString(),cameraOperations.getPhotoPath());
         cameraOperations.setPhotoPath("");
         finish();
     }
