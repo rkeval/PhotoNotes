@@ -139,8 +139,10 @@ public class AddPhoto extends AppCompatActivity {
 
     private void loadPic() {
         mCurrentPhotoPath = cameraOperations.getPhotoPath();
+
         if (mCurrentPhotoPath.equals(""))
             return;
+
         File f = new File(mCurrentPhotoPath);
         Uri contentUri = Uri.fromFile(f);
         ContentResolver cr = getContentResolver();
