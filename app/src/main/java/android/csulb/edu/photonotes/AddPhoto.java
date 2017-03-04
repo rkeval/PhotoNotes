@@ -101,7 +101,7 @@ public class AddPhoto extends AppCompatActivity {
         SQLOperations myDb= new SQLOperations(this);
         EditText caption =(EditText)findViewById(R.id.txtCaption);
        if(caption.getText().toString().equals("") || cameraOperations.getPhotoPath().equals("")){
-           Toast.makeText(this,"Caption or Image is not filled. Please fill both the field.",Toast.LENGTH_SHORT).show();
+           Toast.makeText(this,"Caption or Image is not filled/selected. Please fill both the field.",Toast.LENGTH_SHORT).show();
            return;
        }
         myDb.saveNote(caption.getText().toString(),cameraOperations.getPhotoPath());
